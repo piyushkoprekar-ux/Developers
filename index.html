@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTravel - Homepage</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Font + Icons (optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="logo-icon"></div>
+            <span class="logo-text">Our-Bookings</span>
+        </div>
+
+        <nav class="nav-center">
+            <a href="#">Rides</a>
+            <a href="#">Flights</a>
+            <a href="#">Trains</a>
+            <a href="#">Buses</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="#" class="nav-link">Become a Driver</a>
+            <button class="btn btn-dark">Log In</button>
+            <button class="btn btn-blue">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Your Journey, All in One Place</h1>
+            <p>Book rides, flights, trains, and buses seamlessly. Your next adventure starts here.</p>
+
+            <!-- BOOKING CARD -->
+            <div class="booking-card">
+                <!-- Tabs row -->
+                <div class="booking-tabs">
+                    <button class="tab active">
+                        <i class="fa-solid fa-car"></i>
+                        <span>Rides</span>
+                    </button>
+                    <button class="tab">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>Flights</span>
+                    </button>
+                    <button class="tab">
+                        <i class="fa-solid fa-train-subway"></i>
+                        <span>Trains</span>
+                    </button>
+                    <button class="tab">
+                        <i class="fa-solid fa-bus"></i>
+                        <span>Buses</span>
+                    </button>
+                </div>
+
+                <!-- thin grey full line -->
+                <div class="tabs-border"></div>
+                <!-- sirf active ke neeche blue line -->
+                <div class="active-underline"></div>
+
+                <!-- form area -->
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="from">From</label>
+                        <input id="from" type="text" placeholder="Nagpur, NGP">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="to">To</label>
+                        <input id="to" type="text" placeholder="Mumbai, BOI">
+                    </div>
+
+                    <button type="submit" class="btn btn-blue search-btn">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Container-1-->
+    <div class="Cont1">
+
+</body>
+</html>
