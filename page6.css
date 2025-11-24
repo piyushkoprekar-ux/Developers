@@ -120,3 +120,50 @@ img :hover{
     display: flex;
 
 }
+/* card container */
+
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.heading{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card{
+    background: #1d2635;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card h4{
+    font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    color: rgb(146 173 201);
+}
+
+.value{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
