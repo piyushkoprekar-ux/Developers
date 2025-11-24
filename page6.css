@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(37, 34, 72);
+    background-color:#0b1220;
     font-family: Plus Jakarta Sans, Noto Sans, sans-serif;
 }
 .con{
@@ -166,4 +166,40 @@ img :hover{
     font-size: 26px;
     font-weight: bold;
     color: white;
+}
+/* trip section */
+
+.boxx {
+    margin: 20px;
+    padding: 20px;
+    background: #111827;
+    border-radius: 10px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color:white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 10px 0;
+    color:  rgb(146 173 201);;
+    border-bottom: 1px solid #1f2937;
+}
+
+td {
+    padding: 12px 0;
+    color: white;
+}
+
+.completed {
+    color: #22c55e;
+    font-weight: bold;
 }
