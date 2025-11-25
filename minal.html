@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Voyage Dashboard</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial;
+        background: #0f1720;
+        color: #fff;
+      }
+      .layout {
+        display: flex;
+      }
+      .sidebar {
+        width: 200px;
+        background: #13202a;
+        padding: 20px;
+        height: 100vh;
+      }
+      .sidebar h3 {
+        margin-top: 0;
+      }
+      .sidebar a {
+        display: block;
+        color: #a8c1d1;
+        margin: 10px 0;
+        text-decoration: none;
+      }
+      .sidebar a:hover {
+        color: #fff;
+      }
+      .main {
+        flex: 1;
+        padding: 20px;
+      }
+      .card {
+        background: #18262d;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: none;
+      }
+      button {
+        padding: 10px 15px;
+        background: #1990ff;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="sidebar">
+        <h3>Alex Doe</h3>
+        <p style="font-size: 12px; color: #ccc">alex.doe@email.com</p>
+        <a href="#">Dashboard</a>
+        <a href="#">My Bookings</a>
+        <a href="#">Wallet</a>
+        <a href="#">Settings</a>
+      </div>
+
+      <div class="main">
+        <h1>Good morning, Alex!</h1>
+        <p>Here's a summary of your travel activity.</p>
+
+        <div class="card">
+          <h3>Book a New Trip</h3>
+          <label>From:</label>
+          <input id="fromLoc" placeholder="Enter pickup location" />
+          <label>To:</label>
+          <input id="toLoc" placeholder="Enter destination" />
+          <button onclick="findRide()">Find Ride</button>
+        </div>
+
+        <div class="card">
+          <h3>Wallet Balance</h3>
+          <p style="font-size: 24px; font-weight: bold">$152.75</p>
+        </div>
+
+        <div class="card">
+          <h3>Upcoming Bookings</h3>
+          <p><strong>DXB</strong> - 25 Nov 2024, 8:45 PM</p>
+          <p><strong>JFK Airport Ride</strong> - 25 Nov 2024, 4:30 PM</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function findRide() {
+        const from = document.getElementById("fromLoc").value;
+        const to = document.getElementById("toLoc").value;
+        if (!from || !to) {
+          alert("Please enter both locations.");
+          return;
+        }
+        alert("Searching ride from " + from + " to " + to + "...");
+      }
+    </script>
+  </body>
+</html>
