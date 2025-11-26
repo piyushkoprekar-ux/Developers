@@ -48,6 +48,7 @@
 
 
 <!-------- <top-bar>------- -->
+    <div class="purn">
     <div class="topbar">
     <!-- Search Bar -->
     <div class="search-box">
@@ -62,6 +63,58 @@
     </div>
 
 </div>
+
+
+<!-- -----main -------- -->
+ <div class="main">
+    <div class="top-bar">
+        <h1>Dashboard</h1>
+        <button class="report-btn">Export Report</button>
+    </div>
+
+    <p class="welcome">Welcome back, Admin. Here's a summary of today's activity.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Daily Revenue</h3>
+            <h2>$12,480</h2>
+            <span class="green">+2.5%</span>
+        </div>
+
+        <div class="card">
+            <h3>Active Drivers</h3>
+            <h2>1,204</h2>
+            <span class="red">-0.5%</span>
+        </div>
+     <div class="card">
+            <h3>Ongoing Trips</h3>
+            <h2>152</h2>
+            <span class="green">+8.1%</span>
+        </div>
+
+        <div class="card">
+            <h3>New User Signups</h3>
+            <h2>88</h2>
+            <span class="green">+12%</span>
+        </div>
+    </div>
+
+    <div class="charts">
+        <div class="chart-box">
+            <h3>Booking Trends</h3>
+            <canvas id="lineChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Revenue Growth</h3>
+            <canvas id="barChart"></canvas>
+        </div>
+    </div>
+</div>
+</div>
+<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+<!-- <script src="script.js"></script> -->
+
 
  
 </body>
