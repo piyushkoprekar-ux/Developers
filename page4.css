@@ -17,6 +17,7 @@ body {
     background: #111a22;
     height: 100vh;
     padding: 20px;
+    border-right: 1px solid #007bff;
 }
 
 .frist{
@@ -35,43 +36,74 @@ body {
     
 }
 
-.sidebar ul {
-    list-style: none;
+menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.sidebar ul li {
-    padding: 12px;
-    margin: 8px 0;
-    /* background:#137FEC; */
-    border-radius: 6px;
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
- .sidebar ul li.active {
-    /* background: #3b82f6; */
-     display: block;
-     padding: 12px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.3s;
-    font-size: 16px;
-    font-family: sans-serif;
-
-}
-.active img{
-    height: 15px;
-    width: 15px;
-}
-.sidebar ul li:hover{
-background: #3b82f6;
+.menu-item i {
+    font-size: 18px;
 }
 
-.admin-info {
-    position: absolute;
-    bottom: 20px;
-    color: #d1d5db;
+.menu-item:hover {
+    background: rgba(0, 153, 255, 0.3);
+    color: blue;
 }
+
+.menu-item.active {
+    background: #007bff;
+}
+.settings {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 200px;
+    border-bottom: 1px solid #007bff;
+    
+}
+bottom-user {
+    display: flex;
+   align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-top: 1px solid #0f304b;
+}
+
+.bottom-user img {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.bottom-user h4 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.bottom-user p {
+    margin: 0;
+    font-size: 13px;
+ opacity: 0.7s;
+}
+
+
+
 
 /* Main Area
 .main {
