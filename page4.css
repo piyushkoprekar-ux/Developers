@@ -106,6 +106,7 @@ bottom-user {
 .purn{
     width: 100%;
     height: 100%;
+    background-color: #111a22;
 }
    .topbar {
         display: flex;
@@ -168,6 +169,10 @@ bottom-user {
 
 
     /* Main Area */
+
+
+
+
 .main {
     margin-left:30px ;
     padding: 25px;
@@ -175,6 +180,7 @@ bottom-user {
 }
 
 .top-bar {
+    margin-top: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,30 +200,49 @@ bottom-user {
     color: #cbd5e1;
 }
 
-/* Cards */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
 
+
+/* cards */
+/* .dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 90%;
+  margin-left: 50px;
 }
 
 .card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
+  /* background: #232b38; */
+  /* padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #365574;
+  color: #d3d2d2;
 }
 
-.green {
-    color: #22c55e;
+.title {
+  font-size: 14px;
+  opacity: 0.7;
 }
 
-.red {
-    color: #ef4444;
+h2 {
+  margin: 8px 0;
+  font-size: 30px;
 }
+
+.change {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.up {
+  color: #00e676;
+}
+.down {
+  color: #ff6e6e; */
+/* } */ */
 
 /* Charts */
-.charts {
+ /* .charts {
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,8 +252,8 @@ bottom-user {
 .chart-box {
     background: #1e293b;
     padding: 20px;
-    border-radius: 10px;
-}
+    border-radius: 10px; */
+}  
 
 
 
