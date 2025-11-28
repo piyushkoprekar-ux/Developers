@@ -140,6 +140,10 @@ bottom-user {
     color: #b9c2d0;
 }
 
+
+
+
+
 .search-box input {
     background: transparent;
     border: none;
@@ -246,7 +250,7 @@ h2 {
 }
 
 /* Charts */
-/* .charts {
+.charts {
 
     margin-left: 50px;
     margin-top: 30px;
@@ -254,10 +258,6 @@ h2 {
     grid-template-columns: 1fr 1fr;
     gap: 25px;
     width: 90%;
-
-    
-
-
 }
 
 .chart-box {
@@ -269,4 +269,8 @@ h2 {
 }
 h6{
     color: grey;
-} */
+}
+.chart-box img{
+   height: 60%;
+   width: 100%;
+}
