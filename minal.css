@@ -24,3 +24,20 @@ body{
   border-bottom: 1px solid rgba(255,255,255,0.3);
   margin-bottom:var();
 }
+.logo{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  font-size: 20px;
+  font-weight: 700;
+  color:#e6eef3;
+}
+.logo-icon{
+  width:32px;
+  height:32px;
+  background: var();
+  border-radius: 8px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
