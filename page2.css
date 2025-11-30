@@ -262,6 +262,8 @@ td {
     font-weight: bold;
 }
 
+/* Media query add */
+
 @media (max-width: 900px)
  {
  .con {
