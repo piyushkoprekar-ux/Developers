@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="./bhavna.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!-- Menu Button -->
+    <button id="menu-btn" class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="sidebar">
+        <div class="frist">
+            <img src="./img/cras.png" class="img" alt="">
+            <h3 class="logo">Platform</h2>
+        </div>
+
+
+        <div class="menu">
+            <div class="menu-item active"><i class="fa-solid fa-table-cells-large"></i> Dashboard</div>
+            <div class="menu-item"><i class="fa-solid fa-users"></i> Users</div>
+            <div class="menu-item"><i class="fa-solid fa-id-card"></i> Drivers</div>
+            <div class="menu-item"><i class="fa-solid fa-ticket"></i> Bookings</div>
+            <div class="menu-item"><i class="fa-solid fa-bus"></i> Vehicles</div>
+            <div class="menu-item"><i class="fa-solid fa-chart-line"></i> Reports</div>
+        </div>
+
+        <div class="settings">
+            <i class="fa-solid fa-gear"></i> Settings
+        </div>
+
+
+        <div class="bottom-user">
+            <img src="./img/icons8-admin-94.png" alt="">
+            <div>
+                <h4>Admin Name</h4>
+                <p>Super Admin</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-------- <top-bar>------- -->
+    <div class="purn">
+        <div class="topbar">
+            <!-- Search Bar -->
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search bookings, users, drivers">
+            </div>
+
+            <!-- Right Icons -->
+            <div class="icons">
+                <i class="fa fa-bell"></i>
+                <img src="./img/icons8-admin-94.png" alt="Admin" class="profile-img">
+            </div>
+
+        </div>
+
+
+        <!-- -----main -------- -->
+        <div class="main">
+            <div class="top-bar">
+                <h1>Dashboard</h1>
+                <button class="report-btn">Export Report</button>
+            </div>
+
+            <p class="welcome">Welcome back, Admin. Here's a summary of today's activity.</p>
+
+        </div>
+        <div class="dashboard">
+            <div class="card">
+                <p class="title">Daily Revenue</p>
+                <h2 id="revenue">12,480</h2>
+                <span class="change up"> +2.5%</span>
+            </div>
+
+            <div class="card">
+                <p class="title">Active Drivers</p>
+                <h2 id="drivers">1,204</h2>
+                <span class="change down"> -0.5%</span>
+            </div>
+
+            <div class="card">
+                <p class="title">Ongoing Trips</p>
+                <h2 id="trips">152</h2>
+                <span class="change up"> +8.1%</span>
+            </div>
+
+            <div class="card">
+                <p class="title">New User Signups</p>
+                <h2 id="signups">88</h2>
+                <span class="change up"> +12%</span>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="chart-box">
+                <h3>Booking Trends</h3>
+                <h2>12.678</h2>
+                <h6>Last 30 Days</h6>
+                <span class="change down"> +5.5%</span>
+                <img src="./img/Screenshot_28-11-2025_13745_.jpeg" class="graph" alt="">
+            </div>
+
+            <div class="chart-box">
+                <h3>Revenue Growth</h3>
+                <h2 id="signups">88.430</h2>
+                <h6>Last 30 Days</h6>
+                <span class="change up"> +7.5%</span>
+                <img src="./img/Screenshot_28-11-2025_13810_.jpeg" class="singlegraph" alt="">
+
+            </div>
+        </div>
+
+ <script src="./bhavna.js"></script>
+</body>
+
+</html>
